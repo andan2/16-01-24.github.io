@@ -76,3 +76,19 @@ function cerrarCajaLuz() {
     }
     document.getElementById('cajaLuz').style.display = 'none';
 }
+
+// Controlador para abrir la segunda caja de luz
+document.getElementById('emojiBoton2').addEventListener('click', function() {
+    document.getElementById('cajaLuz2').style.display = 'block';
+    pauseAllAudiosAndUpdateButtons();
+});
+
+// Función para cerrar la segunda caja de luz y detener el video
+function cerrarCajaLuz2() {
+    var video2 = document.querySelector('#cajaLuz2 video');
+    if (video2) {
+        video2.pause();
+        video2.currentTime = 0;
+    }
+    document.getElementById('cajaLuz2').style.display = 'none';
+}
