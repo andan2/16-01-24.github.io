@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   overflow: hidden;
-  background-image: url("./Imagenes/cielo.jpg");
+  background-image: url("./Imagenes/fondo_sunset.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

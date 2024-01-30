@@ -92,3 +92,35 @@ function cerrarCajaLuz2() {
     }
     document.getElementById('cajaLuz2').style.display = 'none';
 }
+
+// Controlador para abrir la tercera caja de luz
+document.getElementById('emojiBoton3').addEventListener('click', function() {
+    document.getElementById('cajaLuz3').style.display = 'block';
+    pauseAllAudiosAndUpdateButtons();
+});
+
+// Función para cerrar la tercera caja de luz y detener el video
+function cerrarCajaLuz3() {
+    var video3 = document.querySelector('#cajaLuz3 video');
+    if (video3) {
+        video3.pause();
+        video3.currentTime = 0;
+    }
+    document.getElementById('cajaLuz3').style.display = 'none';
+}
+
+// Controlador para abrir la cuarta caja de luz
+document.getElementById('emojiBoton4').addEventListener('click', function() {
+    document.getElementById('cajaLuz4').style.display = 'block';
+    pauseAllAudiosAndUpdateButtons();
+});
+
+// Función para cerrar la cuarta caja de luz y detener el video
+function cerrarCajaLuz4() {
+    var video4 = document.querySelector('#cajaLuz4 video');
+    if (video4) {
+        video4.pause();
+        video4.currentTime = 0;
+    }
+    document.getElementById('cajaLuz4').style.display = 'none';
+}
